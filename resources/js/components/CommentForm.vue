@@ -23,9 +23,11 @@
                 </div>
                 <div :id="'captcha_' + parentId" class="col-md-6 mb-3">
                     <div style="display: flex; align-items: center;margin-top: 25px;">
+                        <label class="form-label">Captcha:</label>
+
                         <img src="https://i0.wp.com/appetito.by/wp-content/plugins/payment-qr-woo/assets/loader.gif" alt="Loading..." class="captcha-placeholder">
                         <img :src="captchaImageUrl" alt="Loading..." style="margin-left: 10px;display: none;" class="captcha-image">
-                        <input type="text" :id="captchaId" v-model="captcha" class="form-control" style="width: 100px; margin-left: 10px;" required>
+                        <input type="text" :id="captchaId" v-model="captcha" class="form-control" style="width: 60px; margin-left: 0px;" required>
                     </div>
                     <div class="invalid-feedback text-danger" v-if="errors.captcha">{{ errors.captcha[0] }}</div>
                     <br>

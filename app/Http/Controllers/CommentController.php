@@ -74,7 +74,7 @@ class CommentController extends Controller
             session([$tmpId => md5($result)]);
 
             $captchaText = "$num1 $operator $num2 = ";
-            $image = imagecreate(80, 40);
+            $image = imagecreate(90, 40);
             $bgColor = imagecolorallocate($image, 255, 255, 255);
             $textColor = imagecolorallocate($image, 0, 0, 0);
             imagestring($image, 5, 10, 10, $captchaText, $textColor);

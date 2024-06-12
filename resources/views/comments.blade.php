@@ -16,7 +16,7 @@
         }
 
         .comments .comment:hover {
-            background: #eee;
+            /*background: #eee;*/
         }
 
         .comment {
