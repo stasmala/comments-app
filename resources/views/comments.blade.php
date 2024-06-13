@@ -15,10 +15,6 @@
             padding: 6px;
         }
 
-        .comments .comment:hover {
-            /*background: #eee;*/
-        }
-
         .comment {
             margin-bottom: 20px;
             border: 1px solid #ccc;
